@@ -4,7 +4,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './header/header.react';
+import Header from './header.react';
 
 class App extends React.Component {
     render() {
@@ -16,5 +16,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('wrapper'));
-// export default App;
+ReactDOM.render(<App />, document.getElementById('root--container'));
