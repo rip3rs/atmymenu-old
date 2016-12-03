@@ -1,0 +1,35 @@
+{
+  "name": "jbriggsr3portfolio",
+  "version": "1.0.0",
+  "description": "Jbriggsr3 Portfolio using MongoDB, React, Express, NodeJS, NGinx.",
+  "main": "app/build/js/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/rip3rs/jbriggsr3-portfolio"
+  },
+  "author": "Joseph Briggs",
+  "license": "ISC",
+  "homepage": "www.jbriggsr3.com",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-jasmine": "^1.0.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsxhint": "^0.8.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
