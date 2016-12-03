@@ -28,7 +28,9 @@
     "grunt-jsxhint": "^0.8.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "mongodb": "^2.2.12",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   }
