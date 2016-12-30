@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider "virtualbox" do |vb|
     # Name the box
-    vb.name = "Magic Meal box"
+    vb.name = "At My Menu Box"
 
     # Customize the amount of memory on the VM:
     vb.memory = "4096"
@@ -23,7 +23,7 @@ Vagrant.configure(2) do |config|
     # Variables
 
     # Enables sites
-    PAGE_CONF="magicmeal.dev"
+    PAGE_CONF="atmymenu.dev"
 
     # Shell Script
     echo "##########################################"

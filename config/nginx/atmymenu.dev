@@ -2,10 +2,10 @@ server {
    listen   80; ## listen for ipv4; this line is default and implied
    listen   [::]:80; ## listen for ipv6
 
-   root /var/www/magicmeal.dev/app;
+   root /var/www/atmymenu.dev/app;
    index index.html;
-   
-   server_name magicmeal.dev;
+
+   server_name atmymenu.dev;
 
    location / {
         try_files $uri $uri/ =404;
