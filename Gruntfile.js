@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         dest: 'app/build/js/app.js',
       },
       specs: {
-        src: ['tests/**/*.test.js'],
+        src: ['app/tests/**/*.test.js'],
         dest: 'app/build/tests/specs.js',
         options: {
           browserifyOptions: {
