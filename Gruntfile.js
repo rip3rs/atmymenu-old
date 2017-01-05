@@ -1,5 +1,4 @@
 module.exports = function (grunt) {
-
   grunt.initConfig({
     less: {
       development: {
@@ -20,6 +19,7 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         'app/src/**/*.js',
+        'server/src/**/*.js',
         '!app/src/vendor/*.js',
       ],
     },
@@ -33,28 +33,20 @@ module.exports = function (grunt) {
       },
     },
     browserify: {
-      development: {
+      app: {
         options: {
           transform: [
-            [
-              'babelify',
-              {
-                presets: [
-                  'es2015',
-                  'react',
-                ],
-              },
-            ],
+            ['babelify', { presets: ['es2015', 'latest', 'react'] }],
           ],
           browserifyOptions: {
             debug: true,
           },
         },
-        src: 'app/src/js/**/*.js',
-        dest: 'app/build/js/App.js',
+        src: 'app/src/**/*.js',
+        dest: 'app/build/js/app.js',
       },
       specs: {
-        src: ['app/src/tests/**/*.test.js'],
+        src: ['app/tests/**/*.test.js'],
         dest: 'app/build/tests/specs.js',
         options: {
           browserifyOptions: {

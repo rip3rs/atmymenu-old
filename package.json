@@ -1,23 +1,25 @@
 {
-  "name": "jbriggsr3portfolio",
+  "name": "atmymenu",
   "version": "1.0.0",
-  "description": "Jbriggsr3 Portfolio using MongoDB, React, Express, NodeJS, NGinx.",
+  "description": "At My Menu using MongoDB, React, Express, NodeJS, NGinx.",
   "main": "app/build/js/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js"
+    "start": "node server/build/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/rip3rs/jbriggsr3-portfolio"
+    "url": "https://github.com/rip3rs/atmymenu"
   },
   "author": "Joseph Briggs",
   "license": "ISC",
-  "homepage": "www.jbriggsr3.com",
+  "homepage": "www.atmymenu.com",
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.14.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-node6": "^11.0.0",
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
     "grunt": "^0.4.5",
@@ -28,7 +30,9 @@
     "grunt-jsxhint": "^0.8.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "mongoose": "^4.7.5",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   }

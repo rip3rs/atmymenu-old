@@ -3,9 +3,6 @@
  * Teaser
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-
 module.exports = class Header extends React.Component {
   constructor() {
     super();

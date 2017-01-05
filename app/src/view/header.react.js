@@ -4,8 +4,6 @@
  * Menu
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom';
 import Teaser from './header/teaser.react';
 import Menu from './header/menu.react';
 
