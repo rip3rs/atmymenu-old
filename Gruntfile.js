@@ -19,6 +19,7 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         'app/src/**/*.js',
+        'app/src/**/*.jsx',
         'server/src/**/*.js',
         '!app/src/vendor/*.js',
       ],
@@ -42,7 +43,7 @@ module.exports = function (grunt) {
             debug: true,
           },
         },
-        src: 'app/src/**/*.js',
+        src: 'app/src/**/**/*.jsx',
         dest: 'app/build/js/app.js',
       },
       specs: {
@@ -64,14 +65,14 @@ module.exports = function (grunt) {
         },
       },
       lint: {
-        files: ['app/src/**/*.js'], // which files to watch
+        files: ['app/src/**/**/*.jsx'], // which files to watch
         tasks: ['jshint'],
         options: {
           nospawn: true,
         },
       },
       browserify: {
-        files: ['app/src/js/**/*.js'], // which files to watch
+        files: ['app/src/**/**/*.jsx'], // which files to watch
         tasks: ['browserify'],
       },
     },

@@ -1,0 +1,92 @@
+{
+  "category": {
+    "id": "0",
+    "name": "Soup",
+    "plates": {
+      "0": {
+        "name": "Pho",
+        "ingridients": {
+          "0": "rice",
+          "1": "potato",
+          "2": "egg",
+          "3": "corgette",
+          "4": "cenas"
+        },
+        "spicy": "1",
+        "vegeterian": "1"
+      },
+      "1": {
+        "name": "Caldo Verde",
+        "ingridients": {
+          "0": "rice",
+          "1": "potato",
+          "2": "egg",
+          "3": "corgette",
+          "4": "cenas"
+        },
+        "spicy": "0",
+        "vegeterian": "1"
+      }
+    }
+  },
+  "category": {
+    "id": "1",
+    "name": "Fish",
+    "plates": {
+      "0": {
+        "name": "Pho",
+        "ingridients": {
+          "0": "rice",
+          "1": "potato",
+          "2": "egg",
+          "3": "corgette",
+          "4": "cenas"
+        },
+        "spicy": "1",
+        "vegeterian": "1"
+      },
+      "1": {
+        "name": "Caldo Verde",
+        "ingridients": {
+          "0": "rice",
+          "1": "potato",
+          "2": "egg",
+          "3": "corgette",
+          "4": "cenas"
+        },
+        "spicy": "0",
+        "vegeterian": "1"
+      }
+    }
+  },
+  "category": {
+    "id": "2",
+    "name": "Kids",
+    "plates": {
+      "0": {
+        "name": "Pho",
+        "ingridients": {
+          "0": "rice",
+          "1": "potato",
+          "2": "egg",
+          "3": "corgette",
+          "4": "cenas"
+        },
+        "spicy": "1",
+        "vegeterian": "1"
+      },
+      "1": {
+        "name": "Caldo Verde",
+        "ingridients": {
+          "0": "rice",
+          "1": "potato",
+          "2": "egg",
+          "3": "corgette",
+          "4": "cenas"
+        },
+        "spicy": "0",
+        "vegeterian": "1"
+      }
+    }
+  }
+}
