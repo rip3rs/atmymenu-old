@@ -79,6 +79,7 @@ Vagrant.configure(2) do |config|
     npm install -g grunt-cli
     npm install -g less-cli
     npm install -g browserify
+    npm install -g nodemon
     echo " "
     echo " "
 

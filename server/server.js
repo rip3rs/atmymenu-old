@@ -14,17 +14,17 @@ server.connection({
 
 // Add the route
 server.route({
-    method: 'GET',
-    path:'/hi',
-    handler: function (request, reply) {
-        return reply('hello world');
-    }
+  method: 'GET',
+  path: '/api/hi',
+  handler: function(request, reply) {
+    return reply('hello world');
+  }
 });
 
 // Start the server
 server.start((err) => {
-    if (err) {
-        throw err;
-    }
-    console.log('The Force is at gate ', server.info.uri);
+  if (err) {
+    throw err;
+  }
+  console.log('The Force is at gate ', server.info.uri);
 });
