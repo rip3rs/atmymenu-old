@@ -5,7 +5,7 @@
   "main": "app/build/js/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/build/server.js"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+    "hapi": "^16.1.0",
     "mongoose": "^4.7.5",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

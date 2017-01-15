@@ -1,29 +1,30 @@
-const express = require('express');
-const MongoClient = require('mongodb').MongoClient;
-const bodyParser = require('body-parser');
-const app = express();
-const port = 3000;
+const Hapi = require('hapi');
+const server = new Hapi.Server();
+const mongoose = require('mongoose');
+// const bodyParser = require('body-parser');
 var db;
+
+server.connection({
+  port: 8000,
+});
 
 //TODO: Automate db's per restaurant
 //TODO: automate connection to individual db
+// mongoose.connect('mongodb://127.0.0.1/restaurant_testing');
 
-mongoose.connect('mongodb://127.0.0.1/restaurant_testing');
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-router.use(function (req, res, next) {
-  console.log('accessed api');
-  next();
+// Add the route
+server.route({
+    method: 'GET',
+    path:'/hi',
+    handler: function (request, reply) {
+        return reply('hello world');
+    }
 });
 
-router.get('/', (req, res) => {
-  res.json({
-    message: 'The force has built an api for us!',
-  });
+// Start the server
+server.start((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('The Force is at gate ', server.info.uri);
 });
-
-app.use('/api', router);
-app.listen(port);
-console.log('The Force is on gate ' + port);
