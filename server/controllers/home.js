@@ -1,10 +1,9 @@
-
 var home = {
-  start: function (request, reply) {
+  start: (request, reply) => {
       reply('hi!');
     },
 
-  hiTo: function (request, reply) {
+  hiTo: (request, reply) => {
       let name = encodeURIComponent(request.params.name);
       reply(`hi ${name}!`);
     },

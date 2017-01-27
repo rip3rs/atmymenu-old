@@ -1,12 +1,15 @@
+class Routes {
+  constructor() {
+    const menu = require('./controllers/menu');
+    this.routesPath = [
 
-var home = require('./controllers/home');
+      //MENU
+      ['GET', '/menu', menu.getMenu],
+      ['POST', '/menu', menu.addToMenu],
+      ['DELETE', '/menu/{id}', menu.deleteMenuItem],
 
-var routes = [
+    ];
+  }
+}
 
-  //HOME
-  ['GET', '/hi', home.start],
-  ['GET', '/hiTo/{name}', home.hiTo],
-
-];
-
-module.exports = routes;
+module.exports = Routes;

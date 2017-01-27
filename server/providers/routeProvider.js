@@ -1,28 +1,26 @@
-var routeProvider = {
+const Routes = require('./../Routes');
 
-    server: null,
-    routes: require('../routes'),
-    domain: '/api',
+class RouteProvider extends Routes {
+  constructor(server, api) {
+    super();
+    this.server = server;
+    this.api = '/' + api;
+    this.registerRoutes();
+  }
 
-    init: function (server) {
-        this.server = server;
-        this.registerRoutes();
-      },
+  setRoute(method, path, handler) {
+    this.server.route({
+      method: method,
+      path: this.api + path,
+      handler: handler,
+    });
+  }
 
-    setRoute: function (method, path, handler) {
-      this.server.route({
-        method: method,
-        path: routeProvider.domain + path,
-        handler: handler,
-      });
-    },
+  registerRoutes() {
+    this.routesPath.forEach((route) => {
+      this.setRoute(route[0], route[1], route[2]);
+    });
+  }
+}
 
-    registerRoutes: function () {
-      this.routes.forEach(function (route) {
-        routeProvider.setRoute(route[0], route[1], route[2]);
-      });
-    },
-
-  };
-
-module.exports = routeProvider;
+module.exports = RouteProvider;
